@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorAccent"
+        />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/one"
+        app:layout_constraintCircleAngle="120"
+        app:layout_constraintCircleRadius="150dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircle="@id/two"
+        app:layout_constraintCircleAngle="230"
+        app:layout_constraintCircleRadius="180dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/colorAccent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/two"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+
+
+        />
+
+    <Button
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        app:layout_constraintBaseline_toBaselineOf="@id/one"
+        app:layout_constraintLeft_toRightOf="@id/one"
+        app:layout_constraintRight_toLeftOf="@id/three"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        app:layout_constraintBaseline_toBaselineOf="@id/two"
+        app:layout_constraintLeft_toRightOf="@id/two"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/hOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="One"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintBottom_toTopOf="@id/hTwo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        />
+
+    <Button
+        android:id="@+id/hTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Two"
+        app:layout_constraintLeft_toLeftOf="@id/hOne"
+        app:layout_constraintBottom_toTopOf="@id/hThree"
+        app:layout_constraintTop_toBottomOf="@id/hOne" />
+
+    <Button
+        android:id="@+id/hThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Three"
+        app:layout_constraintLeft_toLeftOf="@id/hTwo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hTwo" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnone"
+        android:text="Bottom One"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btntwo"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Bottom Two"
+        android:textSize="10sp"
+        android:id="@+id/btntwo"
+        app:layout_constraintBaseline_toBaselineOf="@id/btnone"
+        app:layout_constraintLeft_toRightOf="@id/btnone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintRight_toLeftOf="@id/btnthree"
+        />
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnthree"
+        android:text="Bottom Three"
+        android:textSize="10sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@id/btntwo"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btntwo"
+        app:layout_constraintHorizontal_weight="5"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
